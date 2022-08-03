@@ -33,7 +33,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #016e06;
 }
 
 .bg {
@@ -47,4 +47,105 @@ li a:hover:not(.active) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  
+  .bg2 {
+    /* The image used */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/bg.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/bg2.jpg"); */
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #112c13;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   border-bottom: #FFFFFF 2px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .submit{
+    color: white;
+    background-color: #016e06;
+    width: 20%;
   }

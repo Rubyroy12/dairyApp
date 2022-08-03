@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="bg2">
+      <!-- <button class="button" style="vertical-align: middle">
+        <span>Get started </span>
+      </button> -->
+      <div>
+        <h3>Dairy Today</h3>
+        <form onsubmit="">
+          <label for="fname">Shed A</label>
+          <input
+            type="number"
+            id="shedA"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Shed B</label>
+          <input
+            type="number"
+            id="shedB"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+          <label for="lname">Shed C</label>
+          <input
+            type="number"
+            id="shedC"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+          <label for="lname">Shed D</label>
+          <input
+            type="number"
+            id="shedD"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <!-- <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select> -->
+
+          <input type="button" class="submit" onclick="process()"/>
+        </form>
+      </div>
+      <div>
+          <h2>Prduction results per day <br></h2><h3> price per litres <span id="priceperlitre"></span></h3>
+      <div>
+      <p>  <h3>Shed A</h3> Your production in shed A is<span id="A"></span> totalA<span id="totalA"></span></p>
+
+      <p><h3>Shed B</h3> Your production in shed B is <span id="B"></span>totalB<span id="totalB"></span></p>
+       <p><h3>Shed C</h3> Your production in shed C is<span id="C"></span>totalC<span id="totalC"></span></p>
+       <p><h3>Shed D</h3> Your production in shed D is<span id="D"></span>totalD<span id="totalD"></span></p>
+      </div>
+
+      <div>
+        <p>Total </p>
+      </div>
+
+
+
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
